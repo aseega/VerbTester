@@ -1,16 +1,16 @@
 verb, inf, perfect, supine, type
-absum,	abesse, afui,	verb irregular
-accido,	accidere, accidi,	verb 3
+absum,	abesse, afui,	, verb irregular
+accido,	accidere, accidi, , verb 3
 accipio,	accipere, accepi, acceptus,	verb 3
-adsum,	adesse, adfui,	verb irregular
-advenio,	advenire, adveni,	verb 4
+adsum,	adesse, adfui,	,verb irregular
+advenio,	advenire, adveni,	, verb 4
 aedifico,	aedificare, aedificavi, aedificatus,	verb 1
 ago,	agere, egi, actus,	verb 3
-ambulo,	ambulare, ambulavi,	verb 1
+ambulo,	ambulare, ambulavi, , verb 1
 amo,	amare, amavi, amatus,	verb 1
-appropinquo,	appropinquare, appropinquavi + dative,	verb 1
+appropinquo,	appropinquare, appropinquavi + dative, ,verb 1
 ascendo,	ascendere, ascendi, ascensus,	verb 3
-audeo,	audere, ausus sum,	verb 2
+audeo,	audere, ausus sum, ,verb 2
 audio,	audire, audivi, auditus,	verb 4
 aufero,	auferre, abstuli, ablatus,	verb irregular
 bibo,	bibere, bibi,	verb 3
