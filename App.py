@@ -12,13 +12,18 @@ future12Endings = ["bo", "bis", "bit", "bimus", "bitis", "bunt"]
 future34Endings = ["am", "es", "et", "emus", "etis", "ent"]
 pluperfectEndings = ["eram", "eras", "erat", "eramus", "eratis", "erant"]
 
+finalVerb = ''
+
 ranVerbRow = VerbList.sample()
 ranTense = random.choice(tenses)
-
 print(ranVerbRow)
 print(ranTense)
+
+
+#print(ranVerbRow)
+#print(ranTense)
 if ranTense == "perfect":
-    unchangedVerb = ranVerbRow.iloc[0,2]
+    unchangedVerb = (ranVerbRow.iloc[0,2])[:-1]
     ending = random.choice(perfectEndings)
     finalVerb = unchangedVerb + ending
 elif ranTense == "imperfect":
@@ -59,20 +64,18 @@ elif ranTense == "present":
             finalVerb = unchangedVerb + 'i' + ending
 
     
-    ending = random.choice(presentEndings)
 elif ranTense == 'pluperfect':
     ending = random.choice(pluperfectEndings)
-    unchangedVerb = ranVerbRow.iloc[0,2]
+    unchangedVerb = (ranVerbRow.iloc[0,2])[:-1]
     finalVerb = unchangedVerb + ending
 
 elif ranTense == 'future':
-    if "verb 1" or "verb 2" in ranVerbRow:
+    if "verb 1" in ranVerbRow.values or "verb 2" in ranVerbRow.values:
         ending = random.choice(future12Endings)
         unchangedVerb = (ranVerbRow.iloc[0,1])[:-3]
         finalVerb = unchangedVerb + ending
 
-        
-    elif "verb 3" or "verb 4" in ranVerbRow:
+    elif "verb 3" in ranVerbRow.values or "verb 4" in ranVerbRow.values:
         ending = random.choice(future34Endings)
         unchangedVerb = (ranVerbRow.iloc[0,1])[:-2]
         finalVerb = unchangedVerb + ending
